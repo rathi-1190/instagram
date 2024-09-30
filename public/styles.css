@@ -1,0 +1,328 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: small;
+  font-family: "Open Sans", sans-serif; /* Apply Open Sans to the entire body */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Login Container */
+.login-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-box,
+.signup-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  width: 100%;
+  max-width: 175px;
+  margin-bottom: 10px;
+}
+
+/* Input Box */
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3897f0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #2879c5;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.divider .line {
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.divider .or {
+  padding: 0 15px;
+  font-size: small;
+  color: #8e8e8e;
+}
+
+/* Facebook Login Button */
+.facebook-login {
+  margin-top: 10px;
+}
+
+.fb-login-btn {
+  background-color: #ffffff;
+  color: #4267b2;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.fb-login-btn:hover {
+  background-color: #ffffff;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  font-size: small;
+  color: #00376b;
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Signup Box */
+.signup-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.signup-box p {
+  font-size: small;
+}
+
+.signup-box a {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+.signup-box a:hover {
+  text-decoration: underline;
+}
+
+/* App Download Section */
+.app-download {
+  margin-top: 20px;
+}
+
+.app-download p {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.app-buttons img {
+  width: 100%;
+  max-width: 136px;
+  margin: 5px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #8e8e8e;
+  text-decoration: none;
+  font-size: small;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-language p,
+.footer-copyright p {
+  color: #8e8e8e;
+  font-size: small;
+}
+
+.footer-language {
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-box,
+  .signup-box {
+    padding: 30px 20px;
+  }
+
+  .login-btn,
+  .fb-login-btn {
+    padding: 8px;
+  }
+
+  .input-box input {
+    padding: 10px;
+  }
+
+  .app-buttons img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box,
+  .signup-box {
+    padding: 20px 15px;
+  }
+
+  .login-btn,
+  .fb-login-btn {
+    padding: 8px;
+  }
+
+  .input-box input {
+    padding: 8px;
+  }
+
+  .app-buttons img {
+    max-width: 100px;
+  }
+
+  .footer-links {
+    gap: 8px;
+  }
+
+  .footer-links a {
+    font-size: small;
+  }
+
+  .footer-language p,
+  .footer-copyright p {
+    font-size: small;
+  }
+}
+
+.error-container {
+  text-align: center;
+  padding: 50px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.error-container h1 {
+  font-size: 24px;
+  color: #000000; /* Error color */
+}
+
+.error-container p {
+  font-size: 16px;
+  color: #555;
+}
+
+.error-container p a {
+  font-size: 16px;
+  color: #1e486e;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .error-container {
+    padding: 30px;
+  }
+
+  .error-container h1 {
+    font-size: 20px;
+  }
+
+  .error-container p {
+    font-size: 14px;
+  }
+
+  .home-link {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-container {
+    padding: 20px;
+  }
+
+  .error-container h1 {
+    font-size: 18px;
+  }
+
+  .error-container p {
+    font-size: 12px;
+  }
+
+  .home-link {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
